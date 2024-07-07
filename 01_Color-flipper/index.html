@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Color Flipper </title>
+</head>
+
+<style>
+    *{margin: 0; padding: 0; box-sizing: border-box;font-family: 'Courier New', Courier, monospace;}
+    .container {width: 100vw; height: 100vh;}
+    .navbar{height: 50px; display: flex; justify-content: space-around; align-items: center;}
+    .btn__div {height: calc(100% - 50px); display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 10px;}
+    button { background-color: transparent;padding: 6px; border-radius: 5px; border: 1px solid white; cursor: pointer; }
+    button:hover {background-color: white; transition: all 0.1s ease-in;}
+</style>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <p><b>Color Flipper</b></p>
+            <button class="reset__btn">Reset</button>
+        </div>
+        <div class="btn__div">
+            <h3>Background Color : <span class="color__title">White</span></h3>
+            <button class="btn">Click Me</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

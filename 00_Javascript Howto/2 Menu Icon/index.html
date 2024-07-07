@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Icon</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: inline-block; /* now the parent container takes the height and width based on the content present inside the conatiner */
+        cursor: pointer;
+        border: 1px solid black;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg); /* rotate like this => \ */
+    }
+
+    .change .bar2 {
+        opacity: 0; /* decrease the opacity/transparency */
+    }
+
+    .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg); /* rotate like this => / */
+    }
+</style>
+
+<body>
+    <p>Click on the Menu Icon to transform it to "X":</p>
+    <div class="container" onclick="myFunction(this)"><!-- it will sending the current element-->
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    <script>
+        myFunction = (currentElement) => {
+            // toggle function helps on or off the class 
+            currentElement.classList.toggle("change")
+        }
+    </script>
+
+</body>
+
+</html>
