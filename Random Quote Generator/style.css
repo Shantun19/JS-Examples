@@ -1,0 +1,47 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Courier New', Courier, monospace; font-weight: bold;}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4F1787;
+}
+
+.card__container {
+    width: 40%;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+}
+
+.header__content {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.quote__content {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.button__content {
+    text-align: center;
+    padding: 12px;
+}
+
+button {
+    padding: 8px;
+    cursor: pointer;
+    background-color: #EB3678;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: #ff005d;
+}
