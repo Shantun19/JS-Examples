@@ -1,0 +1,39 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Courier New', Courier, monospace;}
+
+.header__container {
+    width: 100vw;
+    padding: 15px;
+    text-align: center;
+    background-color: pink;
+}
+
+.main__section {
+    width: 100vw;
+    height: 70vh;
+}
+
+.main__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    width: 55px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.btn1 {
+    background-color: aquamarine;
+}
+
+.btn2 {
+    background-color: tomato;
+}
+
+.btn3 {
+    background-color: yellow;
+}
