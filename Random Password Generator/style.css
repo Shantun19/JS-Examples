@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #16325B;
+    text-align: center;
+}
+
+nav {
+    padding: 15px;
+    text-align: center;
+    color: #C7FFD8;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.copy-input {
+    width: 400px;
+    padding: 10px;
+    border: 2px solid #C7FFD8;
+}
+
+.copy-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: green;
+}
+
+.copy-icon:hover {
+    transition: all 0.2s ease-in-out;
+    color: #00ff4c;
+}
+
+
+.btn {
+    padding: 10px;
+    background-color: #C7FFD8;
+    color: balck;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: #5dff8e;
+}
