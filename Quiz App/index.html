@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quizz App</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- card container starts  -->
+        <div class="card__container">
+            <div class="heading__container">
+                <h3>Simple Quizz App</h3>
+            </div>
+            <h2 class="question" id="class">1 . What is the color of sky ??</h2>
+            <div class="answer__button__container">
+                <button>Answer 1 </button>
+                <button>Answer 2 </button>
+                <button>Answer 3 </button>
+                <button>Answer 4 </button>
+            </div>
+            <h4>Total Question : <span>5</span></h4>
+        </div>
+    </div>
+    <!-- Modal for Final Result -->
+    <div id="resultModal" class="modal">
+        <div class="modal-content">
+            <h2>Quiz Result</h2>
+            <table>
+                <tr>
+                    <th>Total Questions</th>
+                    <td id="totalQuestions"></td>
+                </tr>
+                <tr>
+                    <th>Correct Answers</th>
+                    <td id="correctAnswers"></td>
+                </tr>
+                <tr>
+                    <th>Wrong Answers</th>
+                    <td id="wrongAnswers"></td>
+                </tr>
+                <tr>
+                    <th>Final Score</th>
+                    <td id="finalScore"></td>
+                </tr>
+            </table>
+            <button id="closeModal">Close</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
