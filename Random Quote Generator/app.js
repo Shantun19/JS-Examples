@@ -1,58 +1,34 @@
-quotes = [
-    "The only way to do great work is to love what you do.",
-    "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-    "Don't watch the clock; do what it does. Keep going.",
-    "You miss 100% of the shots you don't take.",
-    "It always seems impossible until it's done.",
-    "Whether you think you can or you think you can’t, you’re right.",
-    "The best way to predict the future is to invent it.",
-    "If you can dream it, you can do it.",
-    "Hardships often prepare ordinary people for an extraordinary destiny.",
-    "The only limit to our realization of tomorrow is our doubts of today.",
-    "Believe you can and you're halfway there.",
-    "Success usually comes to those who are too busy to be looking for it.",
-    "Do not wait to strike till the iron is hot; but make it hot by striking.",
-    "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
-    "The future belongs to those who believe in the beauty of their dreams.",
-    "The harder the conflict, the greater the triumph.",
-    "The only place where success comes before work is in the dictionary.",
-    "Don't be afraid to give up the good to go for the great.",
-    "You have to learn the rules of the game. And then you have to play better than anyone else.",
-    "The secret of getting ahead is getting started.",
-    "If you're going through hell, keep going.",
-    "It's not whether you get knocked down, it's whether you get up.",
-    "The only impossible journey is the one you never begin.",
-    "Act as if what you do makes a difference. It does.",
-    "What you get by achieving your goals is not as important as what you become by achieving your goals.",
-    "The way to get started is to quit talking and begin doing.",
-    "Don't let yesterday take up too much of today.",
-    "You are never too old to set another goal or to dream a new dream.",
-    "You can’t use up creativity. The more you use, the more you have.",
-    "Start where you are. Use what you have. Do what you can.",
-    "Failure will never overtake me if my determination to succeed is strong enough.",
-    "The best revenge is massive success.",
-    "Don't wait. The time will never be just right.",
-    "Do what you can, with what you have, where you are.",
-    "Our greatest glory is not in never falling, but in rising every time we fall.",
-    "Your time is limited, so don’t waste it living someone else’s life.",
-    "It’s not about ideas. It’s about making ideas happen.",
-    "The journey of a thousand miles begins with one step.",
-    "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
-    "The only way to achieve the impossible is to believe it is possible.",
-    "Dream big and dare to fail.",
-    "You don’t have to be great to start, but you have to start to be great.",
-    "Don’t count the days, make the days count.",
-    "I have not failed. I've just found 10,000 ways that won't work.",
-    "If you can’t fly, then run. If you can’t run, then walk. If you can’t walk, then crawl. But whatever you do, you have to keep moving forward.",
-    "You only live once, but if you do it right, once is enough.",
-    "The mind is everything. What you think you become.",
-    "What we think, we become.",
-    "The only thing we have to fear is fear itself."
+const quoteArray = [
+    {
+        "quote": "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.",
+        "author": " - Albert Schweitzer"
+    },
+    {
+        "quote": "The only way to do great work is to love what you do.",
+        "author": " - Steve Jobs"
+    },
+    {
+        "quote": "Believe you can and you're halfway there.",
+        "author": " - Theodore Roosevelt"
+    },
+    {
+        "quote": "It does not matter how slowly you go as long as you do not stop.",
+        "author": " - Confucius"
+    },
+    {
+        "quote": "Your time is limited, don't waste it living someone else's life.",
+        "author": " - Steve Jobs"
+    }
 ]
 
-const btn = document.querySelector('.btn');
-btn.addEventListener('click' , () => {
-    // generate the random Number.
-    randomNumber = Math.floor(Math.random() * 48);
-    document.querySelector('.quote').innerText = quotes[randomNumber];
+// select the dom element 
+const quoteElement = document.querySelector('.actual__quote');
+const authorName = document.querySelector('.author');
+
+const newQuoteBtn = document.querySelector('.new__quote').addEventListener('click' , function(event) {
+    // generate the random number.
+    let random = Math.floor(Math.random() * quoteArray.length + 1);
+    // get the quote 
+    quoteElement.textContent = quoteArray[random].quote
+    authorName.textContent = quoteArray[random].author
 })
